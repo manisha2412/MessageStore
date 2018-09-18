@@ -1,0 +1,22 @@
+• Instructions on how to compile your service
+Prerequisites --
+Postgres
+Eclipse 
+Postman
+
+Import the project into your workspace and give maven goal as "mvn install".
+
+• Instructions on how to run your service locally
+Given maven goal as "mvn spring-boot:run"
+
+• The decisions you made.
+I have analyzed the scenario and created a database schema that would fit in and serve the purpose. I have used Hibernate JPA that is implementing ORM for creating the database automatically by the application. There are two tables one is storing all the unexpired messages and another is for all the expired messages.
+
+• The limitations of your implementation?
+The application could have worked better in terms functionality and code. There can be testing implementation in the application by using any testing framework like Junit. 
+
+• What would you do if you had more time?
+I would have used AWS S3 service. Messages can be stored in Amazon S3 Standard. In our scenario when the messages get expired it can be easily moved to Amazon S3 Standard-Infrequent Access.
+
+• How would you scale it in the future?
+For scaling the application I will use Spring JMS (Java Message Service).
